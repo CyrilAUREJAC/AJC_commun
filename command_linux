@@ -17,4 +17,11 @@ ping 8.8.8.8
 > vérifier une connectivité de bout en bout
 
 ip route
-> à executer sur une passerelle pour connaître les réseaux connectés
+> à executer sur une passerelle pour connaître les réseaux connectés / affiche la table de routage en IPv4
+
+ip -4 add show dev eth0
+> montre l'ensemble des IPv4 des devices connectés à l'interface
+
+curl http://ipinfo.io
+> renvoi des infos (ip publique, localisation etc.) en JSON (format de présentation) 
+
